@@ -1,0 +1,45 @@
+.chooseOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  width: 50vh;
+  align-items: center;
+  background-color: #1a1a1d;
+}
+
+.chooseInnerContainer {
+  width: 80%;
+}
+
+.chooseHeading {
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.publicButton,
+.privateButton {
+  color: #fff;
+  text-decoration: none;
+  background: #2979ff;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.publicButton:hover,
+.privateButton:hover {
+  background-color: #0349c2;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.joinButton:focus {
+  outline: 0;
+}

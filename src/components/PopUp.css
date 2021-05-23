@@ -1,0 +1,44 @@
+#modal-window {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 999999999999;
+  font-family: sans-serif;
+}
+
+#modal {
+  width: 50vh;
+  min-width: 271px;
+  border: none;
+}
+
+.modalCompanyName {
+  color: rgb(167, 167, 167);
+}
+
+.modal-window {
+  top: 0;
+  left: 0;
+  will-change: transform;
+  margin-top: 2em;
+  position: absolute;
+  background: #ffffff;
+  min-width: 150px;
+  height: initial;
+  border-radius: 3px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  z-index: 9999;
+  border: 1px solid #333748;
+}
+
+.modalHeader {
+  background-color: #043fa5;
+  border: none;
+  cursor: grab;
+  height: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px;
+}
