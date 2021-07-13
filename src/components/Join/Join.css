@@ -48,3 +48,11 @@
 .joinButton:focus {
   outline: 0;
 }
+button:hover {
+  cursor: pointer;
+}
+
+.disableButton {
+  cursor: not-allowed;
+  pointer-events: none;
+}
