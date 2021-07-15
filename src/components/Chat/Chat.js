@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // import TextContainer from "../TextContainer/TextContainer";
 import Messages from "../Messages/Messages";
-// import InfoBar from "../InfoBar/InfoBar";
+import InfoBar from "../InfoBar/InfoBar";
 import Input from "../Input/Input";
 
 import "./Chat.css";
@@ -13,15 +13,16 @@ const Chat = ({ room }) => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  console.log(room);
 
   return (
     <div className="outerContainer">
       <div className="container">
-        {/* <InfoBar
+        <InfoBar
           room={room}
           showModal={showModal}
           setShowModal={setShowModal}
-        /> */}
+        />
         <Messages messages={messages} name={name} />
         <Input message={message} setMessage={setMessage} />
       </div>

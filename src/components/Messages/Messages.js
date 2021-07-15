@@ -154,7 +154,7 @@ const Messages = ({ messages, name }) => {
             } else if (data.messages[0].type == "text") {
               return (
                 <div className="messageContainer justifyStart">
-                  <div className="messageBox backgroundGreen">
+                  <div className="messageBox backgroundGreen tri-right left-top">
                     <small className="sentText greenName top">
                       {data.sender.username}
                     </small>
@@ -242,9 +242,7 @@ const Messages = ({ messages, name }) => {
 
 export default Messages;
 
-{
-  /* Stickers */
-}
+//stickers sent by others
 {
   /* <div className="justifyStart stickerMessage">
 <div className="stickerBox backgroundGreen">
@@ -256,15 +254,45 @@ export default Messages;
 </div> */
 }
 
-// reply
+{
+  /* stickers sent by you */
+}
+{
+  /* <div className="messageContainer justifyEnd stickerMessageSent">
+  <div className="stickerBoxSent backgroundBlue">
+    <small className="sentText">name</small>
+  </div>
+  <p className="messageText colorWhite">
+    <img className="sentSticker" src={Penguid} alt="image" />
+  </p>
+</div>; */
+}
+
+// when you reply
+
 {
   /* <div className="messageContainer justifyEnd">
-          <div className="messageBox backgroundBlue tri-right right-top">
-            <div className="repliedMessage">
-              <small className="sentText">name</small>
-              <p>message from other person</p>
-            </div>
-            <p className="messageText colorWhite">message</p>
-          </div>
-        </div> */
+  <div className="messageBox backgroundBlue tri-right right-top">
+    <div className="repliedMessage">
+      <small className="sentText">name</small>
+      <p>message from other person</p>
+    </div>
+    <p className="messageText colorWhite">message</p>
+  </div>
+</div>; */
+}
+
+//when others reply
+
+{
+  /* <div className="messageContainer justifyStart">
+  <div className="messageBox backgroundGreen">
+    <small className="sentText">Sender's name</small>
+    <div className="repliedMessage">
+      <small className="sentText">name of replied message</small>
+      <p>message from other person</p>
+    </div>
+    <p className="messageText colorWhite">message</p>
+  </div>
+</div>; */
 }

@@ -9,7 +9,7 @@ import { useStateValue } from "../../contexts/UserDetails";
 export default function Join({ isPublic, create }) {
   const [{}, dispatch] = useStateValue();
   const [name, setName] = useState("");
-  // const [room, setRoom] = useState("");
+  const [room, setRoom] = useState("public");
   var roomCode = randomNumber();
   const test = () => {
     const code = document.getElementById("roomCode").value;
@@ -48,14 +48,16 @@ export default function Join({ isPublic, create }) {
             />
           ) : (
             <input
+              value={room}
               className={`joinInput mt-20 ${isPublic ? "no" : ""}`}
+              onChange={(e) => setRoom(e.target.value)}
               placeholder="Room"
               type="text"
               id="roomCode"
             />
           )}
         </div>
-        <Link component={Chat} onClick={test}>
+        <Link component={Chat} props={room} onClick={test}>
           <button disabled={!name} className="joinButton mt-20" type="submit">
             Enter Room
           </button>
