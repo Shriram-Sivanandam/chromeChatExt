@@ -72,9 +72,9 @@ const Messages = ({ messages, name }) => {
                 return (
                   <div className="messageContainer justifyEnd">
                     <div className="messageBox backgroundBlue tri-right right-top">
-                      <small className="sentText top">
+                      {/* <small className="sentText top">
                         {data.sender.username}
-                      </small>
+                      </small> */}
                       <p className="messageText colorWhite">
                         {data.messages[0].message}
                       </p>
@@ -91,9 +91,9 @@ const Messages = ({ messages, name }) => {
                 return (
                   <div className="messageContainer justifyEnd">
                     <div className="messageBox backgroundBlue tri-right right-top">
-                      <small className="sentText top">
+                      {/* <small className="sentText top">
                         {data.sender.username}
-                      </small>
+                      </small> */}
                       <p className="messageText colorWhite">
                         <a
                           className="messageText colorWhite"
@@ -116,9 +116,9 @@ const Messages = ({ messages, name }) => {
                 return (
                   <div className="messageContainer justifyEnd">
                     <div className="messageBox backgroundBlue tri-right right-top">
-                      <small className="sentText top">
+                      {/* <small className="sentText top">
                         {data.sender.username}
-                      </small>
+                      </small> */}
                       <p className="messageText colorWhite">
                         <img
                           className="sentImage"
@@ -136,9 +136,9 @@ const Messages = ({ messages, name }) => {
                 return (
                   <div className="messageContainer justifyEnd">
                     <div className="messageBox backgroundBlue tri-right right-top">
-                      <small className="sentText top">
+                      {/* <small className="sentText top">
                         {data.sender.username}
-                      </small>
+                      </small> */}
                       <p className="messageText colorWhite">
                         <video width="200" height="120" controls>
                           <source
@@ -155,7 +155,7 @@ const Messages = ({ messages, name }) => {
               return (
                 <div className="messageContainer justifyStart">
                   <div className="messageBox backgroundGreen">
-                    <small className="sentText top">
+                    <small className="sentText greenName top">
                       {data.sender.username}
                     </small>
                     <p className="messageText colorWhite">
@@ -174,7 +174,7 @@ const Messages = ({ messages, name }) => {
               return (
                 <div className="messageContainer justifyStart">
                   <div className="messageBox backgroundGreen">
-                    <small className="sentText top">
+                    <small className="sentText greenName top">
                       {data.sender.username}
                     </small>
                     <p className="messageText colorWhite">
@@ -198,7 +198,7 @@ const Messages = ({ messages, name }) => {
               return (
                 <div className="messageContainer justifyStart">
                   <div className="messageBox backgroundGreen">
-                    <small className="sentText top">
+                    <small className="sentText greenName top">
                       {data.sender.username}
                     </small>
                     <p className="messageText colorWhite">
@@ -218,7 +218,7 @@ const Messages = ({ messages, name }) => {
               return (
                 <div className="messageContainer justifyStart">
                   <div className="messageBox backgroundGreen">
-                    <small className="sentText top">
+                    <small className="sentText greenName top">
                       {data.sender.username}
                     </small>
                     <p className="messageText colorWhite">
@@ -241,3 +241,30 @@ const Messages = ({ messages, name }) => {
 };
 
 export default Messages;
+
+{
+  /* Stickers */
+}
+{
+  /* <div className="justifyStart stickerMessage">
+<div className="stickerBox backgroundGreen">
+  <small className="sentText">name</small>
+</div>
+<p className="messageText colorWhite">
+  <img className="sentSticker" src={Penguid} alt="image" />
+</p>
+</div> */
+}
+
+// reply
+{
+  /* <div className="messageContainer justifyEnd">
+          <div className="messageBox backgroundBlue tri-right right-top">
+            <div className="repliedMessage">
+              <small className="sentText">name</small>
+              <p>message from other person</p>
+            </div>
+            <p className="messageText colorWhite">message</p>
+          </div>
+        </div> */
+}

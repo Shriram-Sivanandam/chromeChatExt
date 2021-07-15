@@ -22,7 +22,7 @@
   width: 100%;
   letter-spacing: 0;
   float: left;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   word-wrap: break-word;
   text-decoration: none;
 }
@@ -72,12 +72,16 @@
   color: #353535;
 }
 
+.greenName {
+  color: #34c18e;
+}
+
 .backgroundBlue {
-  background: #2979ff;
+  background: #00bfa5;
 }
 
 .backgroundGreen {
-  background: #13ca22;
+  background: #262d31;
 }
 
 .sentImage {
@@ -116,5 +120,31 @@
   top: 0px;
   /* bottom: auto; */
   border: 15px solid;
-  border-color: #2979ff transparent transparent transparent;
+  border-color: #00bfa5 transparent transparent transparent;
+}
+
+.stickerBox {
+  /* position: relative; */
+  background: #13ca22;
+  border-radius: 10px;
+  padding: 5px 5px;
+  color: white;
+  /* display: inline-block; */
+  max-width: 40%;
+}
+
+.stickerMessage {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding: 0 5%;
+  margin-top: 3px;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.repliedMessage {
+  background-color: #666666;
+  padding: 10px;
+  border-radius: 10px;
 }
