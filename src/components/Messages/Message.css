@@ -2,7 +2,7 @@
   height: 85%;
   /* background: url("../../icons/chatbg.png"); */
   background: #555454;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
