@@ -1,7 +1,7 @@
 .bg {
   height: 85%;
   /* background: url("../../icons/chatbg.png"); */
-  background: #555454;
+  background: #e4e4e4;
   /* overflow-x: hidden; */
   /* overflow: auto; */
   /* overflow-y: scroll;
@@ -97,6 +97,13 @@
   width: auto;
 }
 
+.sentSticker {
+  height: 80px;
+  width: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .mainMessage {
   z-index: 4;
 }
@@ -135,7 +142,7 @@
   /* position: relative; */
   background: #13ca22;
   border-radius: 10px;
-  padding: 5px 5px;
+  padding: 3px 3px;
   color: white;
   /* display: inline-block; */
   max-width: 40%;
@@ -155,7 +162,7 @@
   /* position: relative; */
   background: #00bfa5;
   border-radius: 10px;
-  padding: 5px 5px;
+  padding: 3px 3px;
   color: white;
   /* display: inline-block; */
   max-width: 37.5%;
@@ -183,4 +190,28 @@
 .timestamp {
   font-size: 0.6em;
   float: right;
+}
+
+.stickerTimestamp {
+  /* position: relative; */
+  background: #13ca22;
+  border-radius: 10px;
+  padding: 2px;
+  color: white;
+  /* display: inline-block; */
+  max-width: 10%;
+  float: right;
+  transform: translateX(250%);
+}
+
+.stickerTimestampSent {
+  /* position: relative; */
+  background: #00bfa5;
+  border-radius: 10px;
+  padding: 2px;
+  color: white;
+  /* display: inline-block; */
+  max-width: 10%;
+  float: right;
+  transform: translateX(250%);
 }

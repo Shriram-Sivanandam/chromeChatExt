@@ -4,6 +4,8 @@ import ScrollToBottom from "react-scroll-to-bottom";
 
 // import Penguid from "../../icons/penguid.jpg";
 
+import samplesticker from "../../icons/sticker.webp";
+
 import "./Message.css";
 import socket from "../Socket/Socket";
 // import { useStateValue } from "../../contexts/UserDetails";
@@ -258,6 +260,42 @@ const Messages = ({ messages, name }) => {
               );
             }
           })}
+
+          <div className="messageContainer justifyStart">
+            <div className="messageBox backgroundGreen">
+              <small className="sentText greenName top">User Name</small>
+              <p className="messageText colorWhite">
+                <img className="sentImage" src={samplesticker} alt="image" />
+              </p>
+              <div className="timestamp">
+                <small className="time">13:24</small>
+              </div>
+            </div>
+          </div>
+
+          <div className="justifyStart stickerMessage">
+            <div className="stickerBox backgroundGreen">
+              <small className="sentText">name</small>
+            </div>
+            <p className="messageText colorWhite">
+              <img className="sentSticker" src={samplesticker} alt="image" />
+            </p>
+            <div className="timestamp stickerTimestamp backgroundGreen">
+              <small className="time">13:24</small>
+            </div>
+          </div>
+
+          <div className="messageContainer justifyEnd stickerMessageSent">
+            <div className="stickerBoxSent backgroundBlue">
+              <small className="sentText">name</small>
+            </div>
+            <p className="messageText colorWhite">
+              <img className="sentSticker" src={samplesticker} alt="image" />
+            </p>
+            <div className="timestamp stickerTimestampSent backgroundGreen">
+              <small className="time">13:24</small>
+            </div>
+          </div>
         </div>
       </ScrollToBottom>
     </div>
