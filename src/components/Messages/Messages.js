@@ -78,6 +78,9 @@ const Messages = ({ messages, name }) => {
                       <p className="messageText colorWhite">
                         {data.messages[0].message}
                       </p>
+                      <div className="timestamp">
+                        <small className="time">13:24</small>
+                      </div>
                     </div>
                   </div>
                 );
@@ -161,6 +164,9 @@ const Messages = ({ messages, name }) => {
                     <p className="messageText colorWhite">
                       {data.messages[0].message}
                     </p>
+                    <div className="timestamp">
+                      <small className="time">13:24</small>
+                    </div>
                   </div>
                 </div>
               );
