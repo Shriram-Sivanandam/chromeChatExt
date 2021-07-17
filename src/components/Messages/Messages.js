@@ -106,6 +106,9 @@ const Messages = ({ messages, name }) => {
                           click here to see the file 📩
                         </a>
                       </p>
+                      <div className="timestamp">
+                        <small className="time">13:24</small>
+                      </div>
                     </div>
                   </div>
                 );
@@ -129,6 +132,9 @@ const Messages = ({ messages, name }) => {
                           alt="image"
                         />
                       </p>
+                      <div className="timestamp">
+                        <small className="time">13:24</small>
+                      </div>
                     </div>
                   </div>
                 );
@@ -150,6 +156,9 @@ const Messages = ({ messages, name }) => {
                           />
                         </video>
                       </p>
+                      <div className="timestamp">
+                        <small className="time">13:24</small>
+                      </div>
                     </div>
                   </div>
                 );
@@ -191,6 +200,9 @@ const Messages = ({ messages, name }) => {
                         click here to see the file 📩
                       </a>
                     </p>
+                    <div className="timestamp">
+                      <small className="time">13:24</small>
+                    </div>
                   </div>
                 </div>
               );
@@ -214,6 +226,9 @@ const Messages = ({ messages, name }) => {
                         alt="image"
                       />
                     </p>
+                    <div className="timestamp">
+                      <small className="time">13:24</small>
+                    </div>
                   </div>
                 </div>
               );
@@ -235,6 +250,9 @@ const Messages = ({ messages, name }) => {
                         />
                       </video>
                     </p>
+                    <div className="timestamp">
+                      <small className="time">13:24</small>
+                    </div>
                   </div>
                 </div>
               );
